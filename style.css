@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+header{
+    background-color: rgb(218, 239, 233);
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo{
+    text-decoration: none;
+    color: rgb(21, 187, 181);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-left: 35px;
+    color:  rgb(32, 130, 130);
+}
+.navigation a:hover{
+    color: rgb(20, 43, 145);
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(img/pp3.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    font-weight: 300;
+    font-size: 1.1em;
+    color: aliceblue;
+}
+
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color:  rgb(32, 130, 130);
+    font-size: 2em;
+    font-weight: 400;
+}
+.main h3{
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 1.4em;
+    color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main-btn{
+    color: aliceblue;
+    background-color:  rgb(32, 130, 130);
+    font-size: .7em;
+    padding: 0.9375em 2.1875em;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    transition: 0.7s ease;
+}
+.main-btn:hover{
+    background-color: aqua;
+    transform: scale(1.1);
+
+}
+.social_icons a{
+    color: aliceblue;
+    font-size: 1.7em;
+    padding-right: 30px;
+
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: rgb(10, 108, 108);
+    font-size: 3em;
+    font-weight: 1000;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;    
+    
+}
+.card {
+    background-color: aliceblue;
+    width: 18.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 10px;
+
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.icon{
+    color: rgb(32, 130, 130);
+    font-size: 8em;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+.info h3{
+    color: rgb(10, 26, 54);
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px;
+    font-weight: 700;
+}
+.work{
+    background-color:  rgb(32, 130, 130);
+
+}
+
+.work h2{
+    color: aliceblue;
+}
+
+.work .content{
+    margin-top: 30px;
+}
+
+.project_card{
+    background-color: rgb(208, 211, 212);
+    border: 1px solid white;
+    min-height: 10em;
+    width: 20em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project_card:hover{
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+opacity: 0.9;
+}
+.project_image img{
+    width: 100%;
+}
+.project_info{
+    padding: 1em;
+}
+.project_category{
+    font-size: 0.8em;
+    color: rgb(32, 130, 130);
+}
+.project_title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+    color:  rgb(32, 130, 130);   
+}
+
+.contact{
+    font-size: .7em;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px){
+    header{
+        padding: 10px 100px;
+    }
+
+    .navigation a{
+        font-size: 1em;
+        padding-left: 20px;
+    }
+
+    .main{
+        padding: 50px 20px;
+    }
+
+    .main-btn{
+        padding: 0.75em 1.5em;
+    }
+
+    .card{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .project_card{
+        width: 45%;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        padding: 10px 50px;
+    }
+
+    .main{
+        padding: 40px 20px;
+    }
+
+    .main h2{
+        font-size: 1.5em;
+    }
+
+    .main-btn{
+        padding: 0.75em 1.5em;
+    }
+
+    .card{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .project_card{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .social_icons a{
+        padding-right: 20px;
+    }
+
+    .info h3{
+        font-size: 1em;
+    }
+
+    .project_title{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px){
+    header{
+        padding: 10px 20px;
+    }
+
+    .logo{
+        font-size: 1.5em;
+    }
+
+    .navigation a{
+        font-size: 0.9em;
+        padding-left: 15px;
+    }
+
+    .main h2{
+        font-size: 1.2em;
+    }
+
+    .main-btn{
+        padding: 0.5em 1.2em;
+    }
+
+    .card{
+        width: 100%;
+        padding: 12px;
+    }
+
+    .project_card{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .social_icons a{
+        padding-right: 15px;
+    }
+
+    .title{
+        font-size: 2.5em;
+    }
+}
